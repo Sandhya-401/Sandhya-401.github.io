@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat';
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1350px;
+    /* background-color: blue; */
+}
+/* Responsive css to mobile portrait */
+@media screen and (max-width : 767px){
+    .container{
+        max-width: 88.88%;  
+    }
+}
+@media screen and (max-width : 1199px){
+    .container{
+        max-width: 88.88%;  
+    }
+}
+header .navigation-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #333333;
+    justify-content: space-between;
+}
+header .navigation-bar{
+    padding: 10px 100px;
+}
+header .navigation a{
+    color: white;
+    text-decoration: none;
+}
+header nav.left strong{
+    color: red;
+}
+header nav.right div.menu{
+    display: none;    
+}
+
+header nav.right .navigation-links .links{
+    padding: 10px;
+    color: silver;
+}
+header nav.right .navigation-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav.right .navigation-links a.active{
+    color: red;
+}
+header nav.right a.links:hover{
+    color: red;
+}
+header .buttons{
+    padding: 5px 10px;
+    border: 1px solid silver;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans';
+}
+header .btn2{
+    background-color: red;
+}
+header nav.right .navigation-links .buttons:hover{
+    background-color: red;
+    color: white;
+}
+
+/* Responsive for mobile portrait */
+@media screen and (max-width : 767px){
+    header div.navigation-bar{
+        padding: 10px 20px;
+    }
+    header nav.right div.menu{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    header nav.right .navigation-links .links{
+        display: none;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px){
+    header div.navigation-bar{
+        padding: 10px 5px;
+    }
+    header div.navigation-bar nav.left h1{
+        font-size: 20px;
+    }
+    header nav.right .navigation-links .links{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.map img{
+    width: 100%;
+}
+.map{
+    border-bottom: 4px solid #333333;   
+}
+.events{
+    background-color: #ffffff;
+    color: silver;
+    padding: 5px 100px;
+}
+
+div.event{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+div.event a{
+    text-decoration: none;
+    color: silver;
+    padding:0px 5px;
+}
+div.event a.active{
+    color: black;
+    font-weight: 700;
+    /* padding-bottom: 5px; */
+    border-bottom: 5px solid red;
+}
+div.event a.trend:hover{
+    color: black;
+    font-weight: 700;
+    /* padding-bottom: 5px; */
+    border-bottom: 5px solid red;
+}
+div.festive{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.festive>div{
+    padding: 0px 10px;
+}
+.festive div>input{
+    border: 2px solid silver;
+    height: 35px;
+    font-size: 17px;
+    color: black;
+    padding-left: 5px;
+}
+input.active::placeholder{
+    color: black;
+}
+div.festive div.festive-choice{
+    position: relative;
+}
+div.festive div.festive-choice input{
+    width: 100%;
+    padding-right: 30px;
+   
+}
+div.festive div.festive-choice span{
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    height: 35px;
+    padding: 5px 2px;
+    border-left: 2px solid silver;
+}
+
+/* Responsive for mobile portrait */
+@media screen and (max-width : 767px){
+    .events{
+        padding: 5px 0px;
+    }
+    .events div.event > div{
+        padding: 10px 0px;
+    }
+    .events div.event div.festive > div{
+        padding: 5px 5px;
+    }
+}
+/* Responsive css for Ipad */
+@media screen and (max-width:1199px) and (min-width:768px) {
+    .events{
+        padding: 5px;
+    }
+    .events div.event > div{
+        padding: 10px 0px;
+    }
+    .events div.event div.festive > div{
+        padding: 5px 5px;
+    }
+}
+.imagecontainer{
+    background-color: #f4f4f4;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    padding: 30px 0px;
+}
+.sub{
+    width: 33.33%;
+    padding: 0px 15px;
+    font-size: 0;
+}
+
+.sub img{
+    width: 100%;
+}
+.information h4,h6, span{
+    margin: 0 auto;
+}
+.information{
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+}
+.information span{
+    font-size: 15px;
+}
+.voting{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+}
+.voting span{
+    font-size: 50px;
+    margin: 0;
+}
+
+.voting .male{
+    border-right: 3px solid white;
+}
+.voting .female{
+    border-left: 3px solid white;;
+}
+.voting .gender{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+}
+.voting .gender .percent{
+    font-size: 20px;
+}
+
+.voting .gender .wrapper{
+    padding-left: 10px;
+}
+.sub .borders{
+    border: 1px solid silver;
+}
+
+/* Responsive for mobile portrait */
+@media screen and (max-width : 767px){
+    .sub{
+        width: 100%;
+    }
+    .information p{
+        font-size: 15px;
+    }
+    .voting span {
+        font-size: 40px;
+        margin: 0;
+        padding: 10px 0px;
+    }
+    .voting .gender .wrapper {
+        padding: 10px 0px 10px 10px;
+    }
+    .voting .gender .percent{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px) {
+    .sub{
+        width: 50%;
+    }
+    .information p{
+        font-size: 20px;
+    }
+    .voting span {
+        font-size: 40px;
+        margin: 0;
+        padding: 10px 0px;
+    }
+    .voting .gender .wrapper {
+        padding: 10px 0px 10px 10px;
+    }
+    .voting .gender .percent{
+        font-size: 15px;
+    }
+}
+.container div.load{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container .load a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid silver;
+    background-color: #ffffff;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+.container .load a:hover{
+    background-color: whitesmoke;
+}
+footer{
+    background-color:#333333 ;
+}
+footer .container .footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    justify-content: center;
+}
+
+footer .container .footer-nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: silver;
+    /* text-align: center;
+    width: 100%; */
+}
+footer .container .footer-nav a.active{
+    color: white;
+}
+footer .container .footer-nav a:hover{
+    color: white;
+}
+hr{
+    margin: 0 auto;
+    border: 0px;
+    height: 5px;
+    background-color: #393939;
+}
+footer .container .social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: silver;
+    padding: 20px 5px;
+}
+
+.social-icons div a{
+    color: silver;
+    text-decoration: none;
+    padding: 5px;
+}
+.social-icons div a.active{
+    color: white;
+}
+.social-icons div a:hover{
+    color: white;
+}
+
+/* Responsive for mobile portrait */
+@media screen and (max-width:767px) {
+    footer .container .footer-nav {
+        padding: 10px 0px;
+        text-align: center;
+    }
+    footer .container .footer-nav a{
+        width: 100%;
+    }
+    footer .container .social-icons{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <style>
+    @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css"); 
+    .close .accordionItemHeading{
+          cursor:pointer;
+          padding:10px 15px 10px 0;
+          color: #9e9ea0;
+    }
+    .close .accordionItemContent{
+        height:0px;
+        transition:height 1s ease-out;
+        transform: scaleY(0);
+        display:block; 
+    }
+    .close .toggle-icon::before {
+        color: #9e9ea0;
+        content: "\f078"; 
+        font-family: "Font Awesome 5 Free"; 
+        font-size: 12px;
+        margin-right: 15px;
+    }  
+    .open .accordionItemContent{
+        padding-left: 25px;
+        background-color: #fff;
+        display:block;
+        transition: transform 0.4s ease; 
+    }
+    .open .toggle-icon::before {
+        content: "\f077"; 
+        font-family: "Font Awesome 5 Free";
+        font-size: 12px;
+        margin-right: 15px;
+    }
+    .open .accordionItemHeading{
+        padding:10px 10px 10px 0;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+  <div class="accordion-wrapper">
+        <div class="accordionitem close">
+          <h4 class="accordionItemHeading"><span class="toggle-icon"></span>What is Scott</h4>
+          <div class="accordionItemContent">
+            <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+          </div>
+        </div><hr>
+    
+        <div class="accordionitem close">
+          <h4 class="accordionItemHeading"><span class="toggle-icon"></span> How can I help You?</h4>
+          <div class="accordionItemContent">
+            <p>A JavaScript accordion is made up of a number of expandable/collapsible items. Only one item is ever shown at a time.</p>
+          </div>
+        </div><hr>
+    </div>
+    <script>
+      var accItem = document.getElementsByClassName('accordionitem');
+    var accHD = document.getElementsByClassName('accordionItemHeading');
+    for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordionitem close';
+        }
+        if (itemClass == 'accordionitem close') {
+            this.parentNode.className = 'accordionitem open';
+        }
+    }
+    </script>
+</body>
+</html>

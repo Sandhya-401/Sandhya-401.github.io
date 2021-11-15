@@ -192,8 +192,8 @@ figure.project-images {
 .close .toggle-icon::before {
     color: #9e9ea0;
     content: "\f078"; 
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 12px;
+    font-family: "Font Awesome 5 Pro"; 
+    font-size: 15px;
     margin-right: 15px;
 }  
 .open .accordionItemContent{
@@ -204,8 +204,8 @@ figure.project-images {
 }
 .open .toggle-icon::before {
     content: "\f077"; 
-    font-family: "Font Awesome 5 Free";
-    font-size: 12px;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 15px;
     margin-right: 15px;
 }
 .open .accordionItemHeading{

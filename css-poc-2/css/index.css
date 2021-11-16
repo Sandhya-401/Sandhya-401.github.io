@@ -13,23 +13,21 @@ body{
     box-sizing: border-box;
     font-family: "Poppins";
 }
-/* Global text-fileds background color */
+/* Text-fileds background color */
 .text-fields{
     background-color: #f5df4e ;
 }
+/* Color to the All icons */
 .allicons-color{
     color: #f5df4e;
 }
-.global-padding{
+.center-padding{
     padding-left: 150px;
     padding-right: 150px;
 }
 .header-navigation, .contact-details{
     background-color: #f5df4e;
 }
-/* .navbar{
-    margin: 0;
-} */
 .navbar-header a{
     color: #252b33;
 }
@@ -60,9 +58,23 @@ section div a.myworks-btn{
     margin-right: 10px;
     text-decoration: none;
 }
-/* section div div.author-details{
-    padding-right: 75px;
-} */
+@media screen and (max-width : 767px){
+    .center-padding{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section div.image img{
+        width: 300px;
+        height: 300px;
+        border: 15px solid #ffffff;
+    }
+    div.author-qualification h6{
+        font-size: 30px;
+    }
+    div.author-qualification h5{
+        font-size: 50px;
+    }
+ }
 section div div.author-details span u{
     text-decoration-line: underline;
     text-underline-offset: 5px;
@@ -177,7 +189,6 @@ figure.project-images {
     font-size: 18px;
     font-weight: 500;
 }
-@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css"); 
 .close .accordionItemHeading{
       cursor:pointer;
       padding:10px 15px 10px 0;

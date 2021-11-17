@@ -25,6 +25,12 @@ body{
     padding-left: 150px;
     padding-right: 150px;
 }
+@media screen and (max-width:767px) {
+    .center-padding{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 .header-navigation, .contact-details{
     background-color: #f5df4e;
 }
@@ -47,7 +53,7 @@ div.author-qualification h6{
 div.author-qualification h5{
     font-size: 110px;
 }
-section div.image img{
+div.author-image img{
     float: right;
     width: 400px;
     height: 400px;
@@ -59,14 +65,17 @@ section div a.myworks-btn{
     text-decoration: none;
 }
 @media screen and (max-width : 767px){
-    .center-padding{
-        padding-left: 20px;
-        padding-right: 20px;
+    div.author-qualification{
+        padding: 20px 0;
     }
-    section div.image img{
+    div.author-image{
+        text-align: center;
+    }
+    div.author-image img{
+        float: none;
         width: 300px;
         height: 300px;
-        border: 15px solid #ffffff;
+        border: 10px solid #ffffff;
     }
     div.author-qualification h6{
         font-size: 30px;
@@ -227,7 +236,15 @@ figure.project-images {
     padding-left: 100px;
     font-size: 400px;
 }
-.client{
+@media screen and (max-width : 767px){
+    .lightening-bulb{
+        padding: 0;
+        font-size: 200px;
+        text-align: center;
+    }
+}
+
+.client-feedback{
     background-color: #949597;
 }
 .client-comments{
@@ -246,6 +263,11 @@ figure.project-images {
 .client-fig figcaption{
     font-size: 15px;
     color: #f0f0f1;
+}
+@media screen and (max-width : 767px){
+    .client-comments{
+        padding: 20px;
+    }
 }
 .contact-details p{
     font-size: 20px;

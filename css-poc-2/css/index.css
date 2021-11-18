@@ -89,7 +89,7 @@ section div div.author-details span u{
     text-underline-offset: 5px;
     text-decoration-color: #f5df4e;
 }
-section div div.author-details p{
+div.author-details p{
     font-size: 20px;
 }
 .big-icon-text::before{
@@ -109,6 +109,12 @@ section div div.author-details p{
     font-size: 150px;
     font-weight: 500;
     z-index: 2;
+}
+@media screen and (max-width : 767px){
+    div.author-details p{
+        font-size: 18px;
+        text-align: justify;
+    }
 }
 .technologies{
     background-color: #f8f9fb;

@@ -31,6 +31,13 @@ body{
         padding-right: 20px;
     }
 }
+@media screen and (max-width:1199px) and (min-width:768px){
+    .center-padding{
+        padding: 0 30px;
+    }
+}
+/* Header part css */
+
 .header-navigation, .contact-details{
     background-color: #f5df4e;
 }
@@ -67,8 +74,6 @@ section div a.myworks-btn{
 @media screen and (max-width : 767px){
     div.author-qualification{
         padding: 20px 0;
-    }
-    div.author-image{
         text-align: center;
     }
     div.author-image img{
@@ -84,6 +89,18 @@ section div a.myworks-btn{
         font-size: 50px;
     }
  }
+ @media screen and (max-width:1199px) and (min-width:768px){
+    .div.author-image img{
+        width: 200px;
+        height: 200px;
+    }
+    div.author-qualification h6{
+        font-size: 40px;
+    }
+    div.author-qualification h5{
+        font-size: 45px;
+    }
+ } 
 section div div.author-details span u{
     text-decoration-line: underline;
     text-underline-offset: 5px;
@@ -114,6 +131,9 @@ div.author-details p{
     div.author-details p{
         font-size: 18px;
         text-align: justify;
+    }
+    .authorpersonal-details{
+        width: 50%;
     }
 }
 .technologies{
@@ -166,19 +186,29 @@ div.author-details p{
     color: #45494d ;
     border-bottom: 4px solid #f5df4e;
 }
+.card-image{
+    width: 33.33%;
+    padding: 10px;
+}
 figure.project-images {
     position: relative;
-    padding-bottom: 113%;
+    padding-bottom: 105%;
     width: 100%;
     display: block;
     margin: 0;
 }
-.card img{
+.card-image img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width : 767px){
+    .card-image{
+        width: 50%;
+        padding: 10px;
+    }
 }
 .keyboard-image{
     position: relative;
@@ -249,7 +279,12 @@ figure.project-images {
         text-align: center;
     }
 }
-
+@media screen and (max-width:1199px) and (min-width:768px){
+    .lightening-bulb{
+        padding: 0;
+        font-size: 300px;
+    }
+}
 .client-feedback{
     background-color: #949597;
 }

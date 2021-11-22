@@ -160,6 +160,11 @@ div.author-details p{
     color: #93999f;
     padding: 5px 0;
 }
+@media screen and (max-width:767px){
+    .column-gap{
+        padding-bottom: 40px;
+    }
+}
 .skills-details{
     color: #45494d;
 }
@@ -274,7 +279,7 @@ figure.project-images {
 }
 @media screen and (max-width : 767px){
     .lightening-bulb{
-        padding: 0;
+        padding:0;
         font-size: 200px;
         text-align: center;
     }
@@ -283,6 +288,7 @@ figure.project-images {
     .lightening-bulb{
         padding: 0;
         font-size: 300px;
+        text-align: center;
     }
 }
 .client-feedback{
@@ -308,6 +314,11 @@ figure.project-images {
 @media screen and (max-width : 767px){
     .client-comments{
         padding: 20px;
+    }
+}
+@media  screen and (max-width:1199px) and (min-width:768px) {
+    .client-comments{
+        padding: 10px 50px;
     }
 }
 .contact-details p{
@@ -341,9 +352,30 @@ figure.project-images {
     text-decoration: none;
     padding:10px 40px;
 }
-.copyright-information{
+@media screen and (max-width:767px){
+    .contact-details .contact-address{
+       padding-bottom: 75px;
+    }
+}
+
+/* Footer Section CSS */
+.footer-information{
     background-color: #111419;
 }
-.copyright-information span.active{
+.copyright-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-information span.active{
     color: #f5df4e;
+}
+@media screen and (max-width:767px) {
+    .copyright-information{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .copyright-information div{
+        padding: 5px 0;
+    }
 }

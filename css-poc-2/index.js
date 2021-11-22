@@ -12,3 +12,4 @@ function toggleItem() {
         this.parentNode.className = 'accordionitem open';
     }
 }
+

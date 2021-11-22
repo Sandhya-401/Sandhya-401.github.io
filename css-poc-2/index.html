@@ -16,26 +16,26 @@
     <title>Bootstrap Poc</title>
 </head>
 <body>
-    <header class="header-navigation">
-        <nav class="navbar navbar-header navbar-expand-lg center-padding ">
-            <div class="container-fluid pb-5">
-              <a class="navbar-brand" href="#"><h2 class="fw-bold">CALLUM</h2></a>
+    <header class="header-navigation center-padding">
+        <nav class="navbar navbar-header navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h1 class="fw-bold">CALLUM</h1></a>
               <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id="sandy" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
               </nav>
               <div class="collapse navbar-collapse justify-content-end" id="myNavBar">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Support</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                </div>
+                <ul class="navbar-nav">
+                  <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                  <li><a class="nav-link" href="#">Support</a></li>
+                  <li><a class="nav-link" href="#">Features</a></li>
+                  <li><a class="nav-link" href="#">Pricing</a></li>
+                </ul>
               </div>
             </div>
           </nav>
-          <section class="center-padding">
+          <section>
               <div class="row d-md-flex flex-row-reverse author-qualification">
                 <div class="col-md-6 author-image">
                     <img class="rounded-circle" src="images/women.png" alt="Author-img" title="Author" data-holder-rendered="true">
@@ -44,21 +44,21 @@
                     <h6 class="display-6">HI I'M A FREELANCER</h6>
                     <h5 class="display-1 fw-bold">DESIGNER</h5>
                     <div class="fw-normal mb-4"> based in Los Angels, USA.</div>
-                    <a class="text-white bg-dark myworks-btn" href="#">View My Works</a>
+                    <a class="myworks-btn" href="#">View My Works</a>
                     <span>Contact Me</span>
                     <a href="#" class="text-dark"><i class="far fa-arrow-circle-down"></i></a>
                 </div>
               </div>
-              <div class=" pb-md-3 text-center"><a href="#" class="text-dark"><i class="fas fa-arrow-down fa-1x"></i></a></div>
+              <div class=" p-3 text-center"><a href="#" class="text-dark"><i class="fas fa-arrow-down fa-1x"></i></a></div>
           </section>
     </header>
-    <section class="container-fluid bg-white py-5 center-padding ">
-        <div class="my-5 text-center">
+    <section class="container-fluid bg-white center-padding">
+        <div class="text-center vertical-padding">
             <span class="text-dark px-2 my-3 text-fields">About Me</span>
-            <div class="text-dark display-6 fw-bold mt-3">Know Me More</div>
+            <h2 class="text-dark display-6 fw-bold mt-3">Know Me More</h2>
         </div>
         <div class="row">
-            <div class="col-md-8 pr-3 author-details">
+            <div class="col-lg-8 pr-3 author-details">
                 <span class="h4 text-dark">Hi, I'm <u class="h2">Callum Smith</u></span>
                 <p class="pt-3 lh-lg">I’m working as web developer.I have developed many website 
                     and  also  provided  my services  to college students by 
@@ -69,7 +69,7 @@
                     requirements is our moto.
                 </p>
             </div>
-            <div class="col-md-4 text-center big-icon">
+            <div class="col-lg-4 text-center big-icon">
                <div class="big-icon-content">
                 <span class="big-icon-text">
                     22
@@ -80,7 +80,7 @@
                </div>
             </div>
         </div>
-        <div class="row d-flex py-4">
+        <div class="row d-flex flex-wrap py-5">
             <div class="col-md-3 authorpersonal-details">
                 <dl>
                     <dd>Name:</dd> 
@@ -107,13 +107,13 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid technologies center-padding py-5">
-        <div class="my-5 text-center">
+    <section class="container-fluid technologies center-padding">
+        <div class="text-center vertical-padding">
             <span class="text-dark px-2 my-3 text-fields">What I do?</span>
             <div class="text-dark display-6 fw-bold mt-3">How can I help your next project</div>
         </div>
         <div class="row py-4 allicons-color technologies-details">
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="fas fa-palette fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Graphic Design</div>
                 <p>
@@ -121,7 +121,7 @@
                     but the majority have suffered alteration in some form. 
                 </p>
             </div>
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="far fa-desktop fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Web Design</div>
                 <p>
@@ -129,7 +129,7 @@
                     but the majority have suffered alteration in some form. 
                 </p>
             </div>
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="fas fa-pencil-ruler fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Web Development</div>
                 <p>
@@ -137,9 +137,7 @@
                     but the majority have suffered alteration in some form. 
                 </p>
             </div>
-        </div>
-        <div class="row py-4 allicons-color technologies-details">
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="fas fa-paint-brush fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Brand Identity</div>
                 <p>
@@ -147,7 +145,7 @@
                     but the majority have suffered alteration in some form. 
                 </p>
             </div>
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="fas fa-chart-area fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Business Analysis</div>
                 <p>
@@ -155,7 +153,7 @@
                     but the majority have suffered alteration in some form.
                 </p>
             </div>
-            <div class="col-md-4 cols-gap text-center">
+            <div class="cols-gap text-center">
                 <i class="fas fa-bullhorn fa-4x"></i>
                 <div class="h4 fw-bold py-3 technologies-title">Digital Marketing</div>
                 <p>
@@ -165,13 +163,13 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid bg-white center-padding py-5 ">
-        <div class="my-5 text-center">
+    <section class="container-fluid bg-white center-padding">
+        <div class="text-center vertical-padding">
             <span class="text-dark px-2 my-3 text-fields">Resume</span>
-            <div class="text-dark display-6 fw-bold mt-3">A Summary of My Resume</div>
+            <h2 class="text-dark display-6 fw-bold mt-3">A Summary of My Resume</h2>
         </div>
         <div class="row">
-            <div class="col-md-6 column-gap">
+            <div class="col-xl-6 column-gap">
                 <div class="h3 fw-bold pb-3">My Education</div>
                 <div class="qualification-details">
                     <div>
@@ -197,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-xl-6">
                 <div class="h3 fw-bold pb-3">My Experience</div>
                 <div class="experience-details">
                     <div>
@@ -226,8 +224,8 @@
         </div>
         <div class="pt-5">
             <div class="pb-3"><span class="h3 fw-bold">My Skills</span></div>
-            <div class="row row-1 pt-2">
-                <div class="col-md-6 cols-1 skills-details">
+            <div class="row pt-2">
+                <div class="col-lg-6 skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">Web Design</span>
                         <span class="fw-bold">65%</span>
@@ -238,7 +236,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-6 cols-2 skills-details">
+                <div class="col-lg-6  skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">React Js</span>
                         <span class="fw-bold">70%</span>
@@ -249,9 +247,7 @@
                         </div>
                     </div> 
                 </div>
-            </div>
-            <div class="row row-2 pt-2">
-                <div class="col-md-6 cols-1 skills-details">
+                <div class="col-lg-6  skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">HTML/CSS</span>
                         <span class="fw-bold">95%</span>
@@ -262,7 +258,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-6 cols-2 skills-details">
+                <div class="col-lg-6  skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">Angular Js</span>
                         <span class="fw-bold">55%</span>
@@ -273,9 +269,7 @@
                         </div>
                     </div> 
                 </div>
-            </div>
-            <div class="row row-3 pt-2">
-                <div class="col-md-6 cols-1 skills-details">
+                <div class="col-lg-6  skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">JavaScript</span>
                         <span class="fw-bold">80%</span>
@@ -286,7 +280,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-6 cols-2 skills-details">
+                <div class="col-lg-6  skills-details">
                     <div class="d-flex justify-content-between">
                         <span class="fw-bold">Bootstrap</span>
                         <span class="fw-bold">99%</span>
@@ -299,14 +293,14 @@
                 </div>
             </div>
         </div>
-        <div class="text-center resume-cv ">
+        <div class="text-center download-btn">
             <div class="py-5"><a href="#" class="text-decoration-none">Download CV</a></div>
         </div>
     </section>
-    <section class="container-fluid technologies center-padding py-5">
-        <div class="my-5 text-center">
+    <section class="container-fluid technologies center-padding">
+        <div class="text-center vertical-padding">
             <span class="text-dark px-2 my-3 text-fields">Portfolio</span>
-            <div class="text-dark display-6 fw-bold mt-3">Some of my most recent projects</div>
+            <h2 class="text-dark display-6 fw-bold mt-3">Some of my most recent projects</h2>
         </div>
         <div class="navbar navbar-images justify-content-center">
             <a class="nav-link active"  href="#">All</a>
@@ -353,16 +347,16 @@
             <img src="images/key.png" alt="Keyboard_image" title="Keyboard">
             <div>
                 <div class=" text-white display-6 fw-bold py-4">Interested in working with me?</div>
-                <div class="pt-4"><a class="text-dark text-fields hireme-btn " href="#">Hire Me!</a></div>
+                <div class="pt-4"><a class="text-fields hireme-btn " href="#">Hire Me!</a></div>
             </div> 
         </div>
     </section>
-    <section class="container-fluid bg-white center-padding py-5">
+    <section class="container-fluid bg-white center-padding">
         <div class="row">
-            <div class="col-md-5">
-                <div class="my-5">
+            <div class="col-lg-5">
+                <div class="vertical-padding">
                     <span class="text-fields px-1">FAQ</span> 
-                    <div class="text-dark display-6 fw-bold mt-3">Have any questions?</div>
+                    <h2 class="text-dark display-6 fw-bold mt-3">Have any questions?</h2>
                 </div>
                 <div class="accordion-wrapper">
                     <div class="accordionitem close">
@@ -399,15 +393,15 @@
                     </div><hr>
                 </div>
             </div>
-            <div class="col-md-7 allicons-color lightening-bulb">
+            <div class="col-lg-7 allicons-color lightening-bulb">
                 <i class="fas fa-lightbulb-on"></i>
             </div>
         </div>
     </section>
-    <section class="container-fluid client-feedback center-padding py-5">
-        <div class="my-5 text-center">
+    <section class="container-fluid client-feedback center-padding">
+        <div class="text-center vertical-padding">
             <span class="text-dark px-2 my-3 text-fields">Client Speak</span>
-            <div class="text-white display-6 fw-bold mt-3">What some of my Clients Say</div>
+            <h2 class="text-white display-6 fw-bold mt-3">What some of my Clients Say</h2>
             <div class="client-comments">
                 <div class="allicons-color"><i class="fas fa-quote-left fa-2x"></i></div>
                 <p>Easy to use, reasonably priced simply dummy text of the 
@@ -427,10 +421,10 @@
             
         </div>
     </section>
-    <section class="container-fluid  center-padding py-5 contact-details">
-        <div class="row my-5">
-            <div class="col-md-6 contact-address">
-                <div class="h2 display-6 fw-bold pb-3">Let's Get in Touch</div>
+    <section class="container-fluid  center-padding contact-details">
+        <div class="row vertical-padding">
+            <div class="col-xl-6 contact-address">
+                <h3 class="display-6 fw-bold pb-3">Let's Get in Touch</h3>
                 <div>
                     <p class="pt-3">I enjoy discussing new projects and design
                         challenges. Please share as much info, as 
@@ -456,9 +450,9 @@
                     <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
                 </div>
             </div>
-            <div class="col-md-6 columns-gap">
-                <div class="h2 display-6 fw-bold pb-3">Estimate Your Project?</div>
-                <div class="pt-3">
+            <div class="col-xl-6 columns-gap">
+                <h3 class="display-6 fw-bold pb-3">Estimate Your Project?</h3>
+                <form class="pt-3">
                     <div class="client-details client-name">
                         <span>What is Your Name:</span>
                         <div>
@@ -477,13 +471,11 @@
                             <input type="text" class="text-line text-line-long">
                         </div>
                     </div>
-                </div>
-                <div class="my-2">
-                    <a href="#" class=" text-white send-btn bg-dark ">
-                        <span>Send</span>
+                    <div class="my-2 submit-btn">
+                        <input type="submit" value="Send">
                         <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

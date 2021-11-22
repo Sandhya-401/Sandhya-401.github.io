@@ -1,5 +1,3 @@
-
-
 *{
     box-sizing: border-box;
 }
@@ -17,32 +15,50 @@ body{
 .text-fields{
     background-color: #f5df4e ;
 }
+
 /* Color to the All icons */
 .allicons-color{
     color: #f5df4e;
 }
 .center-padding{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 150px;
 }
 @media screen and (max-width:767px) {
     .center-padding{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding:20px;  
     }
 }
 @media screen and (max-width:1199px) and (min-width:768px){
     .center-padding{
-        padding: 0 30px;
+        padding: 15px 30px;
     }
 }
-/* Header part css */
+.vertical-padding{
+    padding: 70px 0;
+}
+@media  screen and (max-width:767px) {
+    .vertical-padding{
+        padding: 25px 0;
+    }
+}
+/* HEADER SECTION CSS */
 
 .header-navigation, .contact-details{
     background-color: #f5df4e;
 }
 .navbar-header a{
     color: #252b33;
+}
+/* #myNavBar{
+    background-color:#ffeb3b;
+    text-align: center;
+} */
+.navbar-header ul{
+    text-align: center;
+}
+.show  ul{
+    background-color:#ffeb3b;
+    text-align: center;
 }
 .navbar-header a.active{
     font-weight: 600;
@@ -66,11 +82,18 @@ div.author-image img{
     height: 400px;
     border: 15px solid #ffffff;
 }
-section div a.myworks-btn{
+div a.myworks-btn{
     padding: 10px 20px;
     margin-right: 10px;
     text-decoration: none;
+    color: #ffffff;
+    background-color: #353a40;
 }
+div a.myworks-btn:hover{
+    color: #f5df4e;
+    background-color: #061216d2;
+}
+/*  HEADER SECTION RESPONSIVE CSS */
 @media screen and (max-width : 767px){
     div.author-qualification{
         padding: 20px 0;
@@ -101,7 +124,9 @@ section div a.myworks-btn{
         font-size: 45px;
     }
  } 
-section div div.author-details span u{
+
+ /* SECTION 2  */
+div.author-details span u{
     text-decoration-line: underline;
     text-underline-offset: 5px;
     text-decoration-color: #f5df4e;
@@ -127,7 +152,17 @@ div.author-details p{
     font-weight: 500;
     z-index: 2;
 }
-@media screen and (max-width : 767px){
+/* SECTION 2 RESPONSIVE CSS*/
+@media screen and (max-width : 560px){
+    div.author-details p{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .authorpersonal-details{
+        width: 50%;
+    }
+}
+@media screen and (max-width:992px) and (min-width:561px) {
     div.author-details p{
         font-size: 18px;
         text-align: justify;
@@ -136,11 +171,14 @@ div.author-details p{
         width: 50%;
     }
 }
+
+/* SECTION 3 CSS */
 .technologies{
     background-color: #f8f9fb;
 }
 .cols-gap{
-    padding: 0 30px;
+    width: 33.33%;
+    padding: 10px 30px;
 }
 .technologies-title{
     color: black;
@@ -149,6 +187,18 @@ div.author-details p{
     color: #9ba1a8;
     font-size: 18px;
 }
+/* SECTION 3 RESPONSIVE CSS */
+@media screen and (max-width:560px) {
+    .cols-gap{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:561px) {
+    .cols-gap{
+        width: 50%;
+    }
+}
+/* SECTION 4 CSS */
 .qualification-details, .experience-details{
     padding: 0 15px;
     border-left: 3px solid #f5df4e;
@@ -160,28 +210,39 @@ div.author-details p{
     color: #93999f;
     padding: 5px 0;
 }
-@media screen and (max-width:767px){
-    .column-gap{
-        padding-bottom: 40px;
-    }
-}
 .skills-details{
     color: #45494d;
 }
 .progress-bar-color{
     background-color:#f5df4e;
 }
-.resume-cv a{
+.download-btn a{
     color: #45494d;
     font-weight: 600;
     padding: 15px 40px;
     border: 3px solid #3f4449;
 }
+.download-btn a:hover{
+    background-color: #f5df4e;
+}
+/* SECTION 4 RESPONSIVE CSS */
+@media screen and (max-width:767px){
+    .column-gap{
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px){
+    .column-gap{
+        padding-bottom: 60px;
+    }
+}
+/* SECTION 5 CSS */
 .navbar-images a{
     font-size: 18px;
     font-weight: 500;
     color: #a3a5a6;
     margin: 5px;
+    border-bottom: 4px solid transparent;
 }
 .navbar-images a.active{
     color: #45494d;
@@ -209,12 +270,22 @@ figure.project-images {
     width: 100%;
     height: 100%;
 }
-@media screen and (max-width : 767px){
+
+/* SECTION 5 RESPONSIVE CSS */
+@media screen and (max-width:560px) { 
     .card-image{
-        width: 50%;
+        width: 100%;
         padding: 10px;
     }
+} 
+@media screen and (max-width :992px) and (min-width:561px){
+    .card-image{
+        width: 50%;
+        padding: 15px;
+    }
 }
+
+/* SECTION 6 CSS */
 .keyboard-image{
     position: relative;
 }
@@ -230,11 +301,17 @@ figure.project-images {
     text-align: center;
 }
 .hireme-btn{
+    color: #000;
     text-decoration: none;
     padding: 15px 40px;
     font-size: 18px;
     font-weight: 500;
 }
+.hireme-btn:hover{
+    color: #f5df4e;
+    background-color: #949597;
+}
+/* SECTION 7 CSS */
 .accordionItemHeading{
     font-size: 18px;
     font-weight: 500;
@@ -277,20 +354,30 @@ figure.project-images {
     padding-left: 100px;
     font-size: 400px;
 }
-@media screen and (max-width : 767px){
+/* SECTION 7 RESPONSIVE CSS */
+@media screen and (max-width : 560px){
     .lightening-bulb{
         padding:0;
         font-size: 200px;
         text-align: center;
     }
 }
-@media screen and (max-width:1199px) and (min-width:768px){
+@media screen and (max-width:767px) and (min-width:561px) {
     .lightening-bulb{
-        padding: 0;
+        padding:0;
         font-size: 300px;
         text-align: center;
     }
 }
+@media screen and (max-width:1199px) and (min-width:768px){
+    .lightening-bulb{
+        padding: 0;
+        font-size: 400px;
+        text-align: center;
+    }
+}
+
+/* SECTION 8 CSS */
 .client-feedback{
     background-color: #949597;
 }
@@ -311,6 +398,8 @@ figure.project-images {
     font-size: 15px;
     color: #f0f0f1;
 }
+
+/* SECTION 8 RESPONSIVE CSS */
 @media screen and (max-width : 767px){
     .client-comments{
         padding: 20px;
@@ -321,6 +410,8 @@ figure.project-images {
         padding: 10px 50px;
     }
 }
+
+/* SECTION 9 CSS */
 .contact-details p{
     font-size: 20px;
     font-weight: 500;
@@ -348,16 +439,39 @@ figure.project-images {
 .text-line-long{
     padding: 65px 2px 0;
 }
-.send-btn{
-    text-decoration: none;
-    padding:10px 40px;
+.submit-btn{
+    position: relative;
+    width: 125px;
+    font-size: 15px;
+    padding: 8px 30px;
+    border: 1px solid #353a40;
+    color: #ffffff;
+    background-color: #353a40;
 }
+.submit-btn:hover{
+    background-color: #111419;
+}
+.submit-btn input[type=submit]{
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+.submit-btn i{
+    position: absolute;
+    top: 14px;
+    left: 80px;
+}
+/* SECTION 9 RESPONSIVE CSS */
 @media screen and (max-width:767px){
     .contact-details .contact-address{
        padding-bottom: 75px;
     }
 }
-
+@media screen and (max-width:1199px) and (min-width:768px) {
+    .contact-details .contact-address{
+        padding-bottom: 100px;
+     }    
+}
 /* Footer Section CSS */
 .footer-information{
     background-color: #111419;
@@ -370,12 +484,22 @@ figure.project-images {
 .footer-information span.active{
     color: #f5df4e;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:560px) {
     .copyright-information{
         display: flex;
         flex-wrap: wrap-reverse;
     }
     .copyright-information div{
         padding: 5px 0;
+    }
+}
+@media screen and (max-width:992px) and (min-width:561px) {
+    .copyright-information{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .copyright-information div{
+        width: 100%;
+        padding: 10px 0;
     }
 }

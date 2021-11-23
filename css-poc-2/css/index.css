@@ -27,11 +27,15 @@ body{
 .heading6{
    font-size: 20px;
 }
+@media screen and (max-width : 560px){
+    .heading2{
+        font-size: 30px;
+    }
+}
 /* Text-fileds background color */
 .text-fields{
     background-color: #f5df4e ;
 }
-
 /* Color to the All icons */
 .allicons-color{
     color: #f5df4e;
@@ -46,7 +50,7 @@ body{
 }
 @media screen and (max-width:1199px) and (min-width:768px){
     .center-padding{
-        padding: 15px 30px;
+        padding: 15px 70px;
     }
 }
 .vertical-padding{
@@ -70,10 +74,6 @@ body{
 .navbar-header a{
     color: #252b33;
 }
-/* #myNavBar{
-    background-color:#ffeb3b;
-    text-align: center;
-} */
 .navbar-header ul{
     text-align: center;
 }
@@ -103,6 +103,33 @@ div.author-image img{
     height: 400px;
     border: 15px solid #ffffff;
 }
+.header-slider .slick-prev{
+    left: -90px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header-slider .slick-prev::before{
+    content: "\f053"; 
+    font-family: "Font Awesome 5 Pro";
+    margin: 10px;
+}
+.header-slider .slick-next{
+    right: -90px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header-slider .slick-next::before{
+    content: "\f054"; 
+    font-family: "Font Awesome 5 Pro";
+    margin: 10px;
+}
+.header-slider .slick-dots li.slick-active button:before{
+    color: rgba(0, 0, 0, 0.6);
+}
 a.myworks-btn{
     padding: 10px 20px;
     margin-right: 10px;
@@ -123,15 +150,22 @@ a.contact-btn:hover{
 }
 /*  HEADER SECTION RESPONSIVE CSS */
 @media screen and (max-width : 767px){
+    .header-slider .slick-prev{
+        left: 10px;  
+    }
+    .header-slider .slick-next{
+        right: 10px;
+    }
     div.author-qualification{
         padding: 20px 0;
         text-align: center;
     }
     div.author-image img{
         float: none;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         border: 10px solid #ffffff;
+        margin: auto;
     }
     div.author-qualification h6{
         font-size: 30px;
@@ -140,10 +174,18 @@ a.contact-btn:hover{
         font-size: 50px;
     }
  }
- @media screen and (max-width:1199px) and (min-width:768px){
-    .div.author-image img{
-        width: 200px;
-        height: 200px;
+ @media screen and (min-width:768px) and (max-width:1199px){
+    .header-slider .slick-prev{
+        left: -50px;  
+    }
+    .header-slider .slick-next{
+        right: -50px;  
+    }
+    div.author-image img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: auto;
     }
     div.author-qualification h6{
         font-size: 40px;
@@ -422,16 +464,42 @@ figure.project-images {
     width: 100px;
     height: 100px;
     padding: 5px;
+    margin: auto;
 }
 .client-fig figcaption{
     font-size: 15px;
     color: #f0f0f1;
 }
-
+.client-comments .slick-prev{
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.6);
+}
+.client-comments .slick-prev::before{
+    content: "\f053"; 
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Font Awesome 5 Pro";
+    margin: 10px;
+}
+.client-comments .slick-next{
+    right: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.6);
+}
+.client-comments .slick-next::before{
+    content: "\f054"; 
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Font Awesome 5 Pro";
+    margin: 10px;
+}
 /* SECTION 8 RESPONSIVE CSS */
 @media screen and (max-width : 767px){
     .client-comments{
-        padding: 20px;
+        padding: 40px;
     }
 }
 @media  screen and (max-width:1199px) and (min-width:768px) {

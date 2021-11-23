@@ -11,6 +11,22 @@ body{
     box-sizing: border-box;
     font-family: "Poppins";
 }
+.heading2{
+    font-size: 35px;
+    font-weight: 900;
+} 
+.heading3{
+   font-size: 30px;
+}
+.heading4{
+   font-size: 28px;
+}
+.heading5{
+   font-size: 25px;
+}
+.heading6{
+   font-size: 20px;
+}
 /* Text-fileds background color */
 .text-fields{
     background-color: #f5df4e ;
@@ -25,7 +41,7 @@ body{
 }
 @media screen and (max-width:767px) {
     .center-padding{
-        padding:20px;  
+        padding:0 20px;  
     }
 }
 @media screen and (max-width:1199px) and (min-width:768px){
@@ -38,7 +54,12 @@ body{
 }
 @media  screen and (max-width:767px) {
     .vertical-padding{
-        padding: 25px 0;
+        padding: 15px 0;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:768px){
+    .vertical-padding{
+        padding: 20px 0;
     }
 }
 /* HEADER SECTION CSS */
@@ -82,16 +103,23 @@ div.author-image img{
     height: 400px;
     border: 15px solid #ffffff;
 }
-div a.myworks-btn{
+a.myworks-btn{
     padding: 10px 20px;
     margin-right: 10px;
     text-decoration: none;
     color: #ffffff;
     background-color: #353a40;
 }
-div a.myworks-btn:hover{
+a.myworks-btn:hover{
     color: #f5df4e;
     background-color: #061216d2;
+}
+a.contact-btn{
+    color:#061216d2 ;
+    text-decoration: none;
+}
+a.contact-btn:hover{
+    color:#949597 ;
 }
 /*  HEADER SECTION RESPONSIVE CSS */
 @media screen and (max-width : 767px){
@@ -298,6 +326,7 @@ figure.project-images {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 95%;
     text-align: center;
 }
 .hireme-btn{
@@ -500,6 +529,6 @@ figure.project-images {
     }
     .copyright-information div{
         width: 100%;
-        padding: 10px 0;
+        padding: 3px 0;
     }
 }

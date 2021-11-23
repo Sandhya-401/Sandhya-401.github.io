@@ -1,4 +1,9 @@
-$(".client-comments").slick();
+$(".client-comments").slick({
+    autoplay:true,
+    autoplaySpeed:3000
+});
 $(".header-slider").slick({
-    dots: true
+    dots: true,
+    autoplay:true,
+    autoplaySpeed:2000
 });
